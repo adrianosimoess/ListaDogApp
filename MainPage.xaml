@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ListaDogApp"
+             x:Class="ListaDogApp.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry Placeholder="Digite o nome" x:Name="nomedog"
+               Margin="20,10,20,20"/>
+        
+        <Entry Placeholder="Digite a idade" x:Name="idadedog"
+               Margin="20,10,20,20"/>
+        
+        <Entry Placeholder="Digite a raça" x:Name="racadog"
+               Margin="20,10,20,20"/>
+                    
+        <StackLayout VerticalOptions="StartAndExpand"
+                     HorizontalOptions="CenterAndExpand"
+                     Orientation="Horizontal">
+            <Button Text="Adicionar do Campo"
+                    Font="10"
+                    Clicked="Adicionar"/>
+                
+            <Button Text="Checar Lista"
+                    Font="10"
+                    Clicked="Checar"/>
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
